@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/0.3.6/popper.min.js"
+        integrity="sha512-F0fWDU3Gvp/QLynpmYyxbhq8ldkRijaBS1zEARVZmql107k/o8VL6auTHYpWmtwGbTmidWrN/GpJqru8xIbA0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css"
+        integrity="sha512-FEQLazq9ecqLN5T6wWq26hCZf7kPqUbFC9vsHNbXMJtSZZWAcbJspT+/NEAQkBfFReZ8r9QlA9JHaAuo28MTJA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+
+        .MainDiv1 {
+            height: 100%;
+            width: 100%;
+            background: #cad2c5;
+        }
+
+        .Header {
+            height: 75px;
+            width: 100%;
+            background: #1e130c;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #9a8478, #1e130c);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #9a8478, #1e130c);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .Header>Div {
+            padding-top: 21px;
+            font-weight: bold;
+            color: #f9ffff;
+            font-size: 22px;
+
+        }
+
+        .row {
+            margin: 0px !important;
+        }
+
+        .Headerimg {
+            text-align: left;
+        }
+
+        .HeaderText {
+            text-align: center;
+            font-size: 24px;
+
+        }
+
+        .PageContent {
+            height: calc(100% - 75px);
+            width: 100%;
+        }
+
+        .RowEle1 {
+            padding: 15px;
+            height: 68px;
+        }
+
+        #TB1 {
+            margin-left: 25%;
+        }
+
+        .RowEle2 {
+            height: calc(100% - 68px - 1rem);
+        }
+
+        .EventCard {
+
+            height: 50%;
+            padding: 30px;
+        }
+
+        .EventCardBody {
+            height: 100%;
+            padding: 5px;
+        }
+
+        .EventCardBody {
+            border-width: 4px;
+            border-style: solid;
+            border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+        }
+
+        .EventCardHeader {
+            font-size: 14px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .EventCardContent {
+            height: calc(100% - 21px - 1rem);
+        }
+
+        .Logo {
+            border: 1px solid steelblue;
+            height: 67%;
+            width: 87%;
+            margin-top: 22%;
+            margin-left: 7%;
+            border-radius: 50%;
+
+        }
+
+        .ContentEle2>div {
+            height: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="MainDiv1">
+        <div class=" row Header">
+            <div class="Headerimg  col-2">
+                <i class="fa fa-home  " aria-hidden="true" style="
+    font-size: 35px;
+"></i>
+            </div>
+            <div class="HeaderText col-8">
+                <p>Available Events</p>
+            </div>
+        </div>
+        <div class="row PageContent">
+            <div class="form-group col-12 RowEle1">
+
+                <input type="text" class="form-control col-6" id="TB1" placeholder="Search Events">
+
+            </div>
+            <div class="row col-12 RowEle2">
+                <div class="col-3 EventCard">
+                    <div class="col-12 EventCardBody ">
+                        <div class="EventCardHeader">
+                            <p> HealthCare Training</p>
+                        </div>
+                        <div class="row EventCardContent">
+                            <div class="col-6 ContentEle1" style="
+    border: 1px solid blueviolet;
+">
+                                <div class="Logo">
+                                    <i class="fa fa-heart" aria-hidden="true" style="
+    font-size: 50px;
+    margin-top: 27%;
+    margin-left: 20%;
+"></i>
+
+                                </div>
+                            </div>
+                            <div class="col-6 ContentEle2">
+                                <div>
+                                    <Label> 22 July 2022</Label>
+                                </div>
+                                <div>
+                                    <Label> Seat <br> Available : 22</Label>
+                                </div>
+                                <div style="text-align:center">
+                                    <button type="button" class="btn btn-success" style="
+    height: 100%;
+    font-size: 14px;
+">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 EventCard">
+                    <div class="col-12 EventCardBody ">
+                        <div class="EventCardHeader">
+                            <p> HealthCare Training</p>
+                        </div>
+                        <div class="row EventCardContent">
+                            <div class="col-6 ContentEle1" style="
+    border: 1px solid blueviolet;
+">
+                                <div class="Logo">
+                                    <i class="fa fa-heart" aria-hidden="true" style="
+    font-size: 50px;
+    margin-top: 27%;
+    margin-left: 20%;
+"></i>
+
+                                </div>
+                            </div>
+                            <div class="col-6 ContentEle2">
+                                <div>
+                                    <Label> 22 July 2022</Label>
+                                </div>
+                                <div>
+                                    <Label> Seat <br> Available : 22</Label>
+                                </div>
+                                <div style="text-align:center">
+                                    <button type="button" class="btn btn-success" style="
+    height: 100%;
+    font-size: 14px;
+">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 EventCard">
+                    <div class="col-12 EventCardBody ">
+                        <div class="EventCardHeader">
+                            <p> HealthCare Training</p>
+                        </div>
+                        <div class="row EventCardContent">
+                            <div class="col-6 ContentEle1" style="
+    border: 1px solid blueviolet;
+">
+                                <div class="Logo">
+                                    <i class="fa fa-heart" aria-hidden="true" style="
+    font-size: 50px;
+    margin-top: 27%;
+    margin-left: 20%;
+"></i>
+
+                                </div>
+                            </div>
+                            <div class="col-6 ContentEle2">
+                                <div>
+                                    <Label> 22 July 2022</Label>
+                                </div>
+                                <div>
+                                    <Label> Seat <br> Available : 22</Label>
+                                </div>
+                                <div style="text-align:center">
+                                    <button type="button" class="btn btn-success" style="
+    height: 100%;
+    font-size: 14px;
+">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 EventCard">
+                    <div class="col-12 EventCardBody ">
+                        <div class="EventCardHeader">
+                            <p> HealthCare Training</p>
+                        </div>
+                        <div class="row EventCardContent">
+                            <div class="col-6 ContentEle1" style="
+    border: 1px solid blueviolet;
+">
+                                <div class="Logo">
+                                    <i class="fa fa-heart" aria-hidden="true" style="
+    font-size: 50px;
+    margin-top: 27%;
+    margin-left: 20%;
+"></i>
+
+                                </div>
+                            </div>
+                            <div class="col-6 ContentEle2">
+                                <div>
+                                    <Label> 22 July 2022</Label>
+                                </div>
+                                <div>
+                                    <Label> Seat <br> Available : 22</Label>
+                                </div>
+                                <div style="text-align:center">
+                                    <button type="button" class="btn btn-success" style="
+    height: 100%;
+    font-size: 14px;
+">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 EventCard">
+                    <div class="col-12 EventCardBody ">
+                        <div class="EventCardHeader">
+                            <p> HealthCare Training</p>
+                        </div>
+                        <div class="row EventCardContent">
+                            <div class="col-6 ContentEle1" style="
+    border: 1px solid blueviolet;
+">
+                                <div class="Logo">
+                                    <i class="fa fa-heart" aria-hidden="true" style="
+    font-size: 50px;
+    margin-top: 27%;
+    margin-left: 20%;
+"></i>
+
+                                </div>
+                            </div>
+                            <div class="col-6 ContentEle2">
+                                <div>
+                                    <Label> 22 July 2022</Label>
+                                </div>
+                                <div>
+                                    <Label> Seat <br> Available : 22</Label>
+                                </div>
+                                <div style="text-align:center">
+                                    <button type="button" class="btn btn-success" style="
+    height: 100%;
+    font-size: 14px;
+">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 EventCard">
+                    <div class="col-12 EventCardBody ">
+                        <div class="EventCardHeader">
+                            <p> HealthCare Training</p>
+                        </div>
+                        <div class="row EventCardContent">
+                            <div class="col-6 ContentEle1" style="
+    border: 1px solid blueviolet;
+">
+                                <div class="Logo">
+                                    <i class="fa fa-heart" aria-hidden="true" style="
+    font-size: 50px;
+    margin-top: 27%;
+    margin-left: 20%;
+"></i>
+
+                                </div>
+                            </div>
+                            <div class="col-6 ContentEle2">
+                                <div>
+                                    <Label> 22 July 2022</Label>
+                                </div>
+                                <div>
+                                    <Label> Seat <br> Available : 22</Label>
+                                </div>
+                                <div style="text-align:center">
+                                    <button type="button" class="btn btn-success" style="
+    height: 100%;
+    font-size: 14px;
+">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 EventCard">
+                    <div class="col-12 EventCardBody ">
+                        <div class="EventCardHeader">
+                            <p> HealthCare Training</p>
+                        </div>
+                        <div class="row EventCardContent">
+                            <div class="col-6 ContentEle1" style="
+    border: 1px solid blueviolet;
+">
+                                <div class="Logo">
+                                    <i class="fa fa-heart" aria-hidden="true" style="
+    font-size: 50px;
+    margin-top: 27%;
+    margin-left: 20%;
+"></i>
+
+                                </div>
+                            </div>
+                            <div class="col-6 ContentEle2">
+                                <div>
+                                    <Label> 22 July 2022</Label>
+                                </div>
+                                <div>
+                                    <Label> Seat <br> Sold Out</Label>
+                                </div>
+                                <div style="text-align:center">
+                                    <button type="button" class="btn btn-success" style="
+    height: 100%;
+    font-size: 14px;
+">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 EventCard">
+                    <div class="col-12 EventCardBody ">
+                        <div class="EventCardHeader">
+                            <p> HealthCare Training</p>
+                        </div>
+                        <div class="row EventCardContent">
+                            <div class="col-6 ContentEle1" style="
+    border: 1px solid blueviolet;
+">
+                                <div class="Logo">
+                                    <i class="fa fa-heart" aria-hidden="true" style="
+    font-size: 50px;
+    margin-top: 27%;
+    margin-left: 20%;
+"></i>
+
+                                </div>
+                            </div>
+                            <div class="col-6 ContentEle2">
+                                <div>
+                                    <Label> 22 July 2022</Label>
+                                </div>
+                                <div>
+                                    <Label> Seat <br> Available : 22</Label>
+                                </div>
+                                <div style="text-align:center">
+                                    <button type="button" class="btn btn-success" style="
+    height: 100%;
+    font-size: 14px;
+">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
